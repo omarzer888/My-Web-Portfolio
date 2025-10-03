@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active" data-translate="nav-home">Accueil</a></li>
+                <li><a href="#about" class="nav-link" data-translate="nav-about">À propos</a></li>
+                <li><a href="#skills" class="nav-link" data-translate="nav-skills">Compétences</a></li>
+                <li><a href="#projects" class="nav-link" data-translate="nav-projects">Projets</a></li>
+                <li><a href="#contact" class="nav-link" data-translate="nav-contact">Contact</a></li>
+            </ul>
+            <div class="controls">
+                <button class="theme-toggle" title="Mode sombre/clair">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="color-picker-btn" title="Choisir la couleur">
+                    <i class="fas fa-palette"></i>
+                </button>
+                <button class="lang-toggle" title="Changer la langue">
+                    <span class="current-lang">FR</span>
+                </button>
+            </div>
+            <button class="mobile-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Language Picker -->
+    <div class="lang-picker">
+        <div class="lang-option active" data-lang="fr">
+            
+            <span>Français</span>
+        </div>
+        <div class="lang-option" data-lang="ar">
+            
+            <span>العربية</span>
+        </div>
+        <div class="lang-option" data-lang="en">
+            
+            <span>English</span>
+        </div>
+    </div>
+
+    <!-- Color Picker -->
+    <div class="color-picker">
+        <div class="color-options">
+            <button class="color-option active" data-primary="#48dbfb" data-secondary="blue" style="background: linear-gradient(45deg, #48dbfb, blue)"></button>
+            <button class="color-option" data-primary="red" data-secondary="gold" style="background: linear-gradient(45deg, red, gold)"></button>
+            <button class="color-option" data-primary="#00711a" data-secondary="yellow" style="background: linear-gradient(45deg, #00711a, yellow)"></button>
+            <button class="color-option" data-primary="blue" data-secondary="red" style="background: linear-gradient(45deg, blue, red)"></button>
+            <button class="color-option" data-primary="orange" data-secondary="rgb(179, 0, 255)" style="background: linear-gradient(45deg, orange, rgb(179, 0, 255))"></button>
+            <button class="color-option" data-primary="rgb(255, 212, 132)" data-secondary="rgb(128, 38, 38)" style="background: linear-gradient(45deg, rgb(255, 212, 132), rgb(128, 38, 38))"></button>
+            <button class="color-option" data-primary="#325f73" data-secondary="#0f2027" style="background: linear-gradient(45deg, #325f73, #0f2027)"></button>
+            <button class="color-option" data-primary="#dbc9ff" data-secondary="#341f97" style="background: linear-gradient(45deg, #dbc9ff, #341f97)"></button>
+
+
+
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <h1 data-translate="hero-title">Salut c'est Omar Zargani. Développeur Web Full Stack</h1>
+                <p data-translate="hero-subtitle">Créateur d'expériences numériques exceptionnelles</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="cta-button" data-translate="hero-portfolio">Voir mon Portfolio</a>
+                    <a href="#contact" class="cta-button secondary" data-translate="hero-contact">Me contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="container">
+                <h2 class="section-title" data-translate="about-title">À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="images/omar.png" alt="">
+                    </div>
+                    <div class="about-text">
+                        <h3 data-translate="about-passion">Passionné de technologie</h3>
+                        <p data-translate="about-desc1">Développeur web full-stack avec plus de 5 ans d'expérience dans la création d'applications web modernes et performantes. Je me spécialise dans les technologies Html, Css, JavaScript, React et les bases de données modernes.</p>
+                        <p data-translate="about-desc2">Mon approche combine créativité et expertise technique pour livrer des solutions qui dépassent les attentes. J'aime relever des défis complexes et transformer des idées en réalité numérique.</p>
+                        <p data-translate="about-desc3">Toujours à l'affût des dernières tendances technologiques, je m'efforce de créer des expériences utilisateur exceptionnelles et des architectures backend robustes.</p>
+                    </div>
+                </div>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h3 data-translate="service-frontend">Développement Frontend</h3>
+                        <p data-translate="service-frontend-desc">Création d'interfaces utilisateur modernes et responsives avec les dernières technologies.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-server"></i></div>
+                        <h3 data-translate="service-backend">Développement Backend</h3>
+                        <p data-translate="service-backend-desc">Construction d'APIs robustes et de systèmes backend évolutifs pour vos applications.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 data-translate="service-responsive">Design Responsive</h3>
+                        <p data-translate="service-responsive-desc">Des sites web qui s'adaptent parfaitement à tous les appareils et tailles d'écran.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <h2 class="section-title" data-translate="skills-title">Mes Compétences</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3 data-translate="frontend">Frontend</h3>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Html</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Css</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Javascript</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>React</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 50%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 data-translate="backend">Backend</h3>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>My Sql</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Sql Server</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Php</span>
+                                <span>25%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 25%"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <h3 data-translate="tools-frameworks">Outils & Frameworks</h3>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Bootstrap</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-name">
+                                <span>Font Awesome</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-progress">
+                                <div class="skill-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <h2 class="section-title" data-translate="projects-title">Mes Projets</h2>
+                <div class="cards-grid">
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-translate="project1-title">E-commerce Platform</h3>
+                            <p data-translate="project1-desc">Une plateforme e-commerce complète avec panier, paiements, gestion des stocks et tableau de bord administrateur.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-translate="demo">Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-translate="code">Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-translate="project2-title">Analytics Dashboard</h3>
+                            <p data-translate="project2-desc">Tableau de bord d'analyse en temps réel avec graphiques interactifs et rapports personnalisés.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-translate="demo">Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-translate="code">Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-translate="project3-title">Chat Application</h3>
+                            <p data-translate="project3-desc">Application de messagerie en temps réel avec salles privées, notifications push et partage de fichiers.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-translate="demo">Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-translate="code">Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-translate="project4-title">Task Manager</h3>
+                            <p data-translate="project4-desc">Gestionnaire de tâches collaboratif avec système de notifications, calendrier et statistiques de productivité.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-translate="demo">Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-translate="code">Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-translate="project5-title">Blog Platform</h3>
+                            <p data-translate="project5-desc">Plateforme de blog moderne avec éditeur WYSIWYG, système de commentaires et SEO optimisé.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-translate="demo">Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-translate="code">Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <i class="fa-solid fa-cloud"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 data-translate="project6-title">Weather App</h3>
+                            <p data-translate="project6-desc">Application météo avec prévisions détaillées, cartes interactives et alertes personnalisées.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> <span data-translate="demo">Demo</span>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i> <span data-translate="code">Code</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <h2 class="section-title" data-translate="contact-title">Me Contacter</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                        <h3 data-translate="contact-email">Email</h3>
+                        <p>omarzergani@gmail.com</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-phone"></i></div>
+                        <h3 data-translate="contact-phone">Téléphone</h3>
+                        <p>+212 639 619 545</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3 data-translate="contact-location">Localisation</h3>
+                        <p>Marrakech, Maroc</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="max-width: 600px; margin: 3rem auto;">
+                    <h3 data-translate="contact-form-title">Envoyez-moi un message</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name" data-translate="form-name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-translate="form-email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" data-translate="form-subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-translate="form-message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" data-translate="form-submit">
+                            Envoyer le message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p data-translate="footer-text">&copy; 2025 Portfolio. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" title="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+
+    
+    <div class="cursor"></div>
+
+   <script src="script.js"></script>
+</body>
+</html>
